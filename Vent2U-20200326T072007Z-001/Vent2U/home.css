@@ -1,0 +1,227 @@
+html {
+  scroll-behavior: smooth;
+
+}
+body{
+  margin: 0;
+}
+.mySlides {display: none;}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(16, [col-start] 1fr);
+  grid-gap: 20px;
+  text-decoration: none;
+}
+.wrapper > * {
+  grid-column: col-start / span 16;
+}
+@media (max-width: 700px) {
+  .topnav {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    color: black;
+  }
+  .topnav #myLinks {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: white;
+    color:black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: white;
+    color: green;
+  }
+
+.title{
+  grid-column: col-start 2 / span 14;
+  grid-row: 2;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  margin: 20px 0 20px 0;
+  font-size: 1.2rem;
+}
+.temperature{
+  grid-column: col-start 3 / span 6;
+  grid-row: 3;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+}
+.o2{
+  grid-column: col-start 10/ span 6;
+  grid-row: 3;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+}
+.light{
+  grid-column: col-start 3 / span 6;
+  grid-row: 4;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+}
+.umidity{
+  grid-column: col-start 10 / span 6;
+  grid-row: 4;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+}
+.icon{
+  grid-column: col-start 2 / span 1;
+  grid-row: 3;
+  color: darkorange;
+  font-size: 1.5rem;
+}
+.icon2{
+  grid-column: col-start 9 / span 1;
+  grid-row: 4;
+  color: #1EA9FA;
+  font-size: 1.5rem;
+}
+.icon3{
+  grid-column: col-start 2 / span 1;
+  grid-row: 4;
+  color: yellow;
+  font-size: 1.5rem;
+}
+.icon4{
+  grid-column: col-start 9 / span 1;
+  grid-row: 3;
+  color: #1EA9FA;
+  font-size: 1.5rem;
+}
+.title2{
+  grid-column: col-start 2 / span 14;
+  grid-row: 5;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  margin: 20px 0 20px 0;
+  font-size: 1.2rem;
+}
+.icon5{
+  grid-column: col-start 2 / span 1;
+  grid-row: 6;
+  color: #1EA9FA;
+  font-size: 1.5rem;
+}
+.icon6{
+  grid-column: col-start 14 / span 1;
+  grid-row: 6;
+  color: red;
+  font-size: 1.5rem;
+}
+.icon7{
+  grid-column: col-start 2 / span 1;
+  grid-row: 8;
+  color: #1EA9FA;
+  font-size: 1.5rem;
+}
+.icon8{
+  grid-column: col-start 14 / span 1;
+  grid-row: 8;
+  color: #1EA9FA;
+  font-size: 1.5rem;
+}
+.icon9{
+  grid-column: col-start 2 / span 1;
+  grid-row: 10;
+  color: green;
+  font-size: 1.5rem;
+}
+.icon10{
+  grid-column: col-start 14 / span 1;
+  grid-row: 10;
+  color: darkblue;
+  font-size: 1.5rem;
+}
+.icon11{
+  grid-column: col-start 2 / span 1;
+  grid-row: 12;
+  color: black;
+  font-size: 1.5rem;
+}
+.icon12{
+  grid-column: col-start 14 / span 1;
+  grid-row: 12;
+  color: yellow;
+  font-size: 1.5rem;
+}
+.title3{
+  grid-column: col-start 2 / span 14;
+  grid-row: 7;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  margin: 20px 0 20px 0;
+  font-size: 1.2rem;
+}
+.title4{
+  grid-column: col-start 2 / span 14;
+  grid-row: 9;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  margin: 20px 0 20px 0;
+  font-size: 1.2rem;
+}
+.title5{
+  grid-column: col-start 2 / span 14;
+  grid-row: 11;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  margin: 20px 0 20px 0;
+  font-size: 1.2rem;
+}
+.form{
+  grid-column: col-start 3 / span 11;
+  grid-row: 6;
+    background-image: -webkit-linear-gradient(left, transparent 0%, #29B6FD 15%, #FE6969 85%, transparent 100%);
+    background-image: linear-gradient(left, transparent 0%, red 15%, red 85%, transparent 100%);
+    height: 5px;}
+    .form2{
+      grid-column: col-start 3 / span 11;
+      grid-row: 8;
+        background-image: -webkit-linear-gradient(left, transparent 0%, #BCE5FB 15%, #29B6FD 85%, transparent 100%);
+        background-image: linear-gradient(left, transparent 0%, red 15%, red 85%, transparent 100%);
+        height: 5px;}
+        .form3{
+          grid-column: col-start 3 / span 11;
+          grid-row: 10;
+            background-image: -webkit-linear-gradient(left, transparent 0%, #F2F476 15%, #67E504 85%, transparent 100%);
+            background-image: linear-gradient(left, transparent 0%, red 15%, red 85%, transparent 100%);
+            height: 5px;}
+            .form4{
+              grid-column: col-start 3 / span 11;
+              grid-row: 12;
+                background-image: -webkit-linear-gradient(left, transparent 0%, #A9A9A6 15%, #FEFB91 85%, transparent 100%);
+                background-image: linear-gradient(left, transparent 0%, red 15%, red 85%, transparent 100%);
+                height: 5px;}
+}

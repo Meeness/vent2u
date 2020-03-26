@@ -1,0 +1,171 @@
+html {
+  scroll-behavior: smooth;
+
+}
+body{
+  margin: 0;
+}
+.mySlides {display: none;}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(16, [col-start] 1fr);
+  grid-gap: 20px;
+  text-decoration: none;
+}
+.wrapper > * {
+  grid-column: col-start / span 16;
+}
+@media (max-width: 700px) {
+  .topnav {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    color: black;
+  }
+  .topnav #myLinks {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: white;
+    color:black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: white;
+    color: green;
+  }
+
+  .title{
+    grid-column: col-start 2 / span 14;
+    grid-row: 2;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0 20px 0;
+    font-size: 1.2rem;
+  }
+  .title2{
+    grid-column: col-start 2 / span 14;
+    grid-row: 6;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0 0px 0;
+    font-size: 1.2rem;
+  }
+  .title3{
+    grid-column: col-start 2 / span 7;
+    grid-row: 7;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0 0px 0;
+    font-size: 1rem;
+  }
+  .title4{
+    grid-column: col-start 2 / span 7;
+    grid-row: 8;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0 0px 0;
+    font-size: 1rem;
+  }
+  .title5{
+    grid-column: col-start 10 / span 6;
+    grid-row: 7;
+    background-color: lightgreen;
+    color: white;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    border-color: green;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0 0px 0;
+    font-size: 1rem;
+  }
+  .title6{
+    grid-column: col-start 10 / span 6;
+    grid-row: 8;
+    background-color: red;
+    color: white;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    border-color: green;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0 0px 0;
+    font-size: 1rem;
+  }
+
+.title5 a, .title6 a{
+  color: white;
+  text-decoration: none;
+}
+
+input{
+  border-radius: 5px;
+  margin: 0 5px 0 5px !important;
+  width: 5ch;
+}
+.box{
+  grid-column: col-start 10 / span 5;
+  grid-row: 3;
+}
+.box2{
+  grid-column: col-start 10 / span 5;
+  grid-row: 4;
+}
+.box3{
+  grid-column: col-start 10 / span 5;
+  grid-row: 5;
+}
+.temperature{
+  grid-column: col-start 2 / span 8;
+  grid-row: 3;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+.humidity{
+  grid-column: col-start 2 / span 8;
+  grid-row: 4;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+.air{
+  grid-column: col-start 2 / span 8;
+  grid-row: 5;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+button{
+  border-radius: 10px;
+  background-color: white;
+  border-color: lightblue;
+}
+}

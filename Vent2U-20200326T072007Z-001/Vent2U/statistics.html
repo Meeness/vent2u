@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <link rel="stylesheet" href="statistics.css">
+    <title>Vent2U</title>
+    <link rel="shortcut icon" type="image/x-icon" href="IMG/favicon.png"/>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="topnav">
+  <a href="#home" class="active">Hello, Robert!</a>
+  <div id="myLinks">
+    <a href="home.html">Home</a>
+    <a href="settings.html">Settings</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<article class="title">Air statistics: </article>
+<article class="h24h">Last 24h: </article>
+<article class="min">min. </article>
+<article class="max">max. </article>
+<article class="temperature">Temperature </article>
+<article class="humidity">Humidity %</article>
+<article class="air">Air quality</article>
+<article class="t1">21</article>
+<article class="t2">24</article>
+<article class="h1">30</article>
+<article class="h2">46</article>
+<article class="a1">400</article>
+<article class="a2">700</article>
+<article class="icon"><i class="fas fa-chevron-down"></i></article>
+
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</body>
+</html>

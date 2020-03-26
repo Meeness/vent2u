@@ -1,0 +1,162 @@
+html {
+  scroll-behavior: smooth;
+
+}
+body{
+  margin: 0;
+}
+.mySlides {display: none;}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(16, [col-start] 1fr);
+  grid-gap: 20px;
+  text-decoration: none;
+}
+.wrapper > * {
+  grid-column: col-start / span 16;
+}
+@media (max-width: 700px) {
+  .topnav {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    color: black;
+  }
+  .topnav #myLinks {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: white;
+    color:black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: white;
+    color: green;
+  }
+
+  .title{
+    grid-column: col-start 2 / span 14;
+    grid-row: 2;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0 20px 0;
+    font-size: 1.2rem;
+  }
+  .h24h{
+    grid-column: col-start 10 / span 5;
+    grid-row: 3;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+  }
+  .min{
+    grid-column: col-start 10 / span 3;
+    grid-row: 4;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+  }
+  .max{
+    grid-column: col-start 13 / span 3;
+    grid-row: 4;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+  }
+  .temperature{
+    grid-column: col-start 2 / span 8;
+    grid-row: 5;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #86C8E3;
+  }
+  .humidity{
+    grid-column: col-start 2 / span 8;
+    grid-row: 6;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #81D86E;
+  }
+  .air{
+    grid-column: col-start 2 / span 8;
+    grid-row: 7;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #CBB130;
+  }
+  .icon{
+    grid-column: col-start 15 / span 1;
+    grid-row: 3;
+  }
+  .t1{
+    grid-column: col-start 10 / span 3;
+    grid-row: 5;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+  }
+  .t2{
+    grid-column: col-start 13 / span 3;
+    grid-row: 5;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+  }
+  .h1{
+    grid-column: col-start 10 / span 3;
+    grid-row: 6;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+  }
+  .h2{
+    grid-column: col-start 13 / span 3;
+    grid-row: 6;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+  }
+  .a1{
+    grid-column: col-start 10 / span 3;
+    grid-row: 7;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+  }
+  .a2{
+    grid-column: col-start 13 / span 3;
+    grid-row: 7;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+  }
+}

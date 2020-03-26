@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="jquery.nice-number.js"></script>
+    <script type="text/javascript">
+      $(function(){
+
+  $('input[type="number"]').niceNumber();
+
+});
+    </script>
+    <link rel="stylesheet" href="settings.css">
+    <link rel="stylesheet" href="jquery.nice-number.css">
+    <title>Vent2U</title>
+    <link rel="shortcut icon" type="image/x-icon" href="IMG/favicon.png"/>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="topnav">
+  <a href="#home" class="active">Hello, Robert!</a>
+  <div id="myLinks">
+    <a href="home.html">Home</a>
+    <a href="statistics.html">Air statistics</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<article class="title">Settings: </article>
+<article class="title2">Connections </article>
+<article class="title3">System </article>
+<article class="title4">Wrist sensors</article>
+<article class="title5"><a href="#">Connect </a></article>
+<article class="title6"><a href="#">Disconnect </a></article>
+<article class="temperature">Temperature </article>
+<article class="humidity">Humidity %</article>
+<article class="air">Air quality (hundreds)</article>
+
+<div class="box">
+  <input type="number" value="23">
+</div>
+<div class="box2">
+  <input type="number" value="40">
+</div>
+<div class="box3">
+  <input type="number" value="20">
+</div>
+
+</div>
+<script>
+
+</script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
